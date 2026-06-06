@@ -16,7 +16,7 @@ Notebook contains aggregations and plots needed for analysis, the reasoning and 
 │   │                          1. grid-search evaluation on all 18 odds datasets
 │   │                          2. evaluation and visualisation on 2D datasets
 │   │                          3. analysis: rankings, heatmaps, effect of n and p
-│   │                          4. EDA and ensemble prediction on unlabelled test data
+│   │                          4. prediction on unlabelled test data
 │   ├── eval.py              – standalone script that runs the full benchmark evaluation
 │   ├── utils.py             – helpers:
 │   │                            evaluate()                  – grid-search over all models
@@ -34,6 +34,7 @@ Python version: 3.11.15
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate
+source .venv/bin/activate      # macOS/Linux
+.venv\Scripts\activate         # Windows
 pip install -r requirements.txt
 ```
